@@ -15,18 +15,27 @@ public static void swapHalves(int[] vector) {
 	for(int i=0; i<vector.length; i++) {
 		vector[i]=(int)(Math.random()*10);
 		}
-//	for (int i=0; i<vector.length; i++) {
-//	System.out.print(vector[i]+" ");
-//		}
-//	System.out.println();
+	for (int i=0; i<vector.length; i++) {
+	System.out.print(vector[i]+" ");
+		}
+	System.out.println();
 	
-	int center = vector.length >> 1;
-	int val = vector.length % 2;
-	for (int i = 0; i < center; i++) {
-	int tmp = vector[i];
-	vector[i] = vector[center + i + val];
-	vector[center + i + val] = tmp;
-	        }
+//	int center = vector.length >> 1;
+//	int val = vector.length % 2;
+//	for (int i = 0; i < center; i++) {
+//	int tmp = vector[i];
+//	vector[i] = vector[center + i + val];
+//	vector[center + i + val] = tmp;
+//	   }
+	
+	int step = (vector.length+1)/2;
+	
+	for (int i=0; i<vector.length/2;i++) {
+		int tmp = vector [i];
+		vector [i]=vector [i+step];
+		vector [i+step]=tmp;
+	}
+	
 	for (int i=0; i<vector.length; i++) {
 	System.out.print(vector[i]+" ");
 		}
