@@ -13,7 +13,7 @@ public class SwapHalves {
 }
 public static void swapHalves(int[] vector) {
 	for(int i=0; i<vector.length; i++) {
-		vector[i]=(int)(Math.random()*10);
+		vector[i]=(int)(50+Math.random()*50);
 		}
 	for (int i=0; i<vector.length; i++) {
 	System.out.print(vector[i]+" ");

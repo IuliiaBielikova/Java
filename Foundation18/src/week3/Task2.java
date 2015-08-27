@@ -17,24 +17,5 @@ public class Task2 {
 //			System.out.print(str.charAt(i));
 		return result;
 		
-	public static int indexOfCount(String str, String sub) { //1
-		return 0;
-	}
-	public static void main (String[]args){ //2
-		int size=getSizeFromConsole();
-		String[]array=new String[size];
-		fillArrayFromConsole(array);
-		print(array);
-	}
-	
-	public static void print (STring[]array) {
-		
-	}
-	public static void fillArrayFromConsole (String[]array){
-		
-	}
-	public static int getSizeFromConsole(){
-		return 0;
-	}
 	}
 }
