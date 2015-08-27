@@ -24,7 +24,7 @@ public class Task1 {
 //		System.out.println(str1.equals(str2));
 //		System.out.println(str1.equalsIgnoreCase("Qwerty"));
 		
-		int idx=str1.indexOf("ert");
+		int idx=str1.indexOf("ert"); //ищет часть строки в общей строке
 		int idx2=str1.lastIndexOf("ert");
 		System.out.println(idx);
 		System.out.println(idx2);
